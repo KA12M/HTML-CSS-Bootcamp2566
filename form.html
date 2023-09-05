@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="icon" href="images/HTML5_Badge_512.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="js/include-module.js"></script>
+  </head>
+
+  <body>
+    <div include-html="menu/menu.html"></div>
+
+    <div class="container">
+      <form id="form">
+        <div>
+          <input type="text" placeholder="search..." name="search" />
+          <button>search</button>
+        </div>
+
+        <hr />
+
+        <div>
+          <input type="text" placeholder="username" name="username" />
+          <br />
+          <input type="email" placeholder="email" name="email" />
+          <input type="password" placeholder="password" name="password" />
+          <br />
+          <input type="date" placeholder="birthday" name="birthday" />
+          <input type="checkbox" name="checkbox" />
+          <input type="color" name="color" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

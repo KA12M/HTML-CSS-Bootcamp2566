@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="profile-responsive.css" />
+    <script src="js/date-module.js"></script>
+  </head>
+
+  <body>
+    <!-- image cover -->
+    <section class="container">
+      <img
+        class="bg-img"
+        src="https://scontent-lhr8-1.xx.fbcdn.net/v/t1.6435-9/121151796_2828881954013391_1210095547877895838_n.jpg?stp=dst-jpg_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=e3f864&_nc_ohc=n-6Y8kv62xoAX-I4zP4&_nc_ht=scontent-lhr8-1.xx&oh=00_AfA2z9ScIhpJ0UuXjEnymUbj3giPo804XILYBjEkNiKMBQ&oe=651D255F"
+        alt="background image"
+      />
+    </section>
+
+    <!-- profile -->
+    <section class="container profile-container">
+      <div class="profile-left">
+        <div class="profile-img">
+          <img
+            src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/341534883_740804337523133_4684572932628061992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=jSEy81UzQ_UAX8udFwP&_nc_ht=scontent-lhr8-1.xx&oh=00_AfCHeLaqph_gzQpu5lrhS41a_fBwGnKwffGWy5Z0WeGSAw&oe=64FA4792"
+            alt="profile image"
+          />
+          <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="profile-name">
+          <h1>KA RM</h1>
+          <span>ผู้ติดตาม 3.1 พัน คน • กำลังติดตาม 742 คน</span>
+          <div>
+            <img
+              src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/847.jpg"
+            />
+            <img
+              src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/497.jpg"
+            />
+            <img
+              src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/210.jpg"
+            />
+            <img
+              src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/309.jpg"
+            />
+            <img
+              src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/122.jpg"
+            />
+            <img
+              src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1037.jpg"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-right">
+        <div>
+          <button class="active"><i class="fa-solid fa-pen"></i> แก้ไข</button>
+          <button><i class="fa-solid fa-pen-ruler"></i> ดูเครื่องมือ</button>
+          <button><i class="fa-solid fa-plus"></i> เพิ่มลงในสตอรี่</button>
+        </div>
+        <div>
+          <button><i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- bio -->
+    <section class="container tab-menu-container">
+      <div class="left">
+        <button class="active">โพสต์</button>
+        <button>เกี่ยวกับ</button>
+        <button>Reels</button>
+        <button>รูปภาพ</button>
+        <button>วิดีโอ</button>
+        <button>กลุ่ม</button>
+        <button>เพิ่มเติม <i class="fa-solid fa-caret-down"></i></button>
+      </div>
+
+      <div class="right">
+        <button><i class="fa-solid fa-ellipsis"></i></button>
+      </div>
+    </section>
+
+    <!-- content body -->
+    <section class="content-container">
+      <div class="content">
+        <div class="left">
+          <div class="bio">
+            <h2>แนะนำตัว</h2>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+              culpa! Quis vero quae dolorum architecto sed eum, velit earum
+            </span>
+            <button>แก้ไขคำอธิบายตัวเอง</button>
+            <span
+              ><i class="fa-regular fa-circle-user"></i> โปรไฟล์ ·
+              ซอฟต์แวร์</span
+            >
+            <span
+              ><i class="fa-solid fa-user-graduate"></i> เรียน วท.บ.
+              วิทยาการคอมพิวเตอร์</span
+            >
+            <span
+              ><i class="fa-solid fa-user-graduate"></i> เคยศึกษาที่
+              โรงเรียนทองผาภูมิวิทยา</span
+            >
+            <span><i class="fa-solid fa-location-dot"></i> จาก กาญจนบุรี</span>
+            <span
+              ><i class="fa-brands fa-instagram"></i>
+              <a href="https://www.instagram.com/k.a12m">k.a12m</a></span
+            >
+            <button>แก้ไขรายละเอียด</button>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="form">
+            <div>
+              <img
+                src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/341534883_740804337523133_4684572932628061992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=jSEy81UzQ_UAX8udFwP&_nc_ht=scontent-lhr8-1.xx&oh=00_AfCHeLaqph_gzQpu5lrhS41a_fBwGnKwffGWy5Z0WeGSAw&oe=64FA4792"
+                alt=""
+              />
+              <input
+                id="post-input"
+                type="text"
+                placeholder="คุณกำลังคิดอะไรอยู่"
+              />
+            </div>
+
+            <hr />
+
+            <div class="tab-button">
+              <button>
+                <i class="fa-solid fa-video color-crimson"></i> วิดีโอถ่ายทอดสด
+              </button>
+              <button>
+                <i class="fa-solid fa-images color-forestgreen"></i>
+                รูปภาพ/วิดีโอ
+              </button>
+              <button>
+                <i class="fa-solid fa-clapperboard color-deeppink"></i> คลิป
+                Reels
+              </button>
+            </div>
+          </div>
+
+          <div id="post-body"></div>
+
+          <!-- <div class="post">
+            <div class="post-header">
+              <div class="header-left">
+                <img
+                  src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/341534883_740804337523133_4684572932628061992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=jSEy81UzQ_UAX8udFwP&_nc_ht=scontent-lhr8-1.xx&oh=00_AfCHeLaqph_gzQpu5lrhS41a_fBwGnKwffGWy5Z0WeGSAw&oe=64FA4792"
+                  alt=""
+                />
+                <div class="part-name">
+                  <h4 style="margin: 0">KA RM</h4>
+                  <span
+                    >6 สิงหาคม เวลา 11:54 น. ·
+                    <i
+                      style="font-size: 12px"
+                      class="fa-solid fa-earth-americas"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+              <div class="header-right">
+                <button><i class="fa-solid fa-ellipsis"></i></button>
+              </div>
+            </div>
+
+            <div class="post-caption">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+                quo veritatis obcaecati enim accusamus, quae ullam ipsa
+                praesentium eveniet saepe est voluptatum quidem velit tempore
+                repudiandae magni ab at quia.
+              </p>
+            </div>
+
+            <div class="post-tab-menu">
+              <button><i class="fa-regular fa-thumbs-up"></i> ถูกใจ</button>
+              <button>
+                <i class="fa-regular fa-message"></i> แสดงความคิดเห็น
+              </button>
+              <button><i class="fa-solid fa-share"></i> แชร์</button>
+            </div>
+
+            <div class="post-comment">
+              <img
+                src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/341534883_740804337523133_4684572932628061992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=jSEy81UzQ_UAX8udFwP&_nc_ht=scontent-lhr8-1.xx&oh=00_AfCHeLaqph_gzQpu5lrhS41a_fBwGnKwffGWy5Z0WeGSAw&oe=64FA4792"
+                alt=""
+              />
+              <div class="input-container">
+                <input type="text" placeholder="เขียนความคิดเห็น..." />
+                <button>
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button>
+                  <i class="fa-regular fa-face-smile"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-image"></i>
+                </button>
+                <button>
+                  <i class="fa-regular fa-file"></i>
+                </button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const input = document.getElementById("post-input");
+      const postBody = document.getElementById("post-body");
+      const posts = [];
+
+      input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") submitForm();
+      });
+
+      function submitForm() {
+        if (input.value) {
+          posts.unshift({ message: input.value, date: formattedDate() });
+          input.value = "";
+          renderPost();
+        }
+      }
+
+      function renderPost() {
+        var str = "";
+        posts.forEach(function ({ message, date }) {
+          str += ` 
+        <div class="post">
+            <div class="post-header">
+              <div class="header-left">
+                <img
+                  src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/341534883_740804337523133_4684572932628061992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=jSEy81UzQ_UAX8udFwP&_nc_ht=scontent-lhr8-1.xx&oh=00_AfCHeLaqph_gzQpu5lrhS41a_fBwGnKwffGWy5Z0WeGSAw&oe=64FA4792"
+                  alt=""
+                />
+                <div class="part-name">
+                  <h4 style="margin: 0">KA RM</h4>
+                  <span
+                    >${date} ·
+                    <i
+                      style="font-size: 12px"
+                      class="fa-solid fa-earth-americas"
+                    ></i
+                  ></span>
+                </div>
+              </div>
+              <div class="header-right">
+                <button><i class="fa-solid fa-ellipsis"></i></button>
+              </div>
+            </div>
+
+            <div class="post-caption">
+              <p>${message}</p>
+            </div>
+
+            <div class="post-tab-menu">
+              <button><i class="fa-regular fa-thumbs-up"></i> ถูกใจ</button>
+              <button>
+                <i class="fa-regular fa-message"></i> แสดงความคิดเห็น
+              </button>
+              <button><i class="fa-solid fa-share"></i> แชร์</button>
+            </div>
+
+            <div class="post-comment">
+              <img
+                src="https://scontent-lhr8-1.xx.fbcdn.net/v/t39.30808-6/341534883_740804337523133_4684572932628061992_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=jSEy81UzQ_UAX8udFwP&_nc_ht=scontent-lhr8-1.xx&oh=00_AfCHeLaqph_gzQpu5lrhS41a_fBwGnKwffGWy5Z0WeGSAw&oe=64FA4792"
+                alt=""
+              />
+              <div class="input-container">
+                <input type="text" placeholder="เขียนความคิดเห็น..." />
+                <button>
+                  <i class="fa-regular fa-pen-to-square"></i>
+                </button>
+                <button>
+                  <i class="fa-regular fa-face-smile"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button>
+                  <i class="fa-solid fa-image"></i>
+                </button>
+                <button>
+                  <i class="fa-regular fa-file"></i>
+                </button>
+              </div>
+            </div> 
+            </div> 
+          `;
+        });
+
+        postBody.innerHTML = str;
+      }
+    </script>
+  </body>
+</html>
