@@ -1,0 +1,12 @@
+# initial github
+git init
+git branch -M main
+git remote add origin <github url>
+
+# push code
+git add .
+git commit -m "first commit"
+git push origin main
+
+# remove .git folder
+rmdir .git/s
